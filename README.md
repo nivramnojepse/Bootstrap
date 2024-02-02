@@ -1,1 +1,1 @@
-Base-404 Activity # 7 Explorintg Bootstraps 
+Base-404 Activity # 7 Exploring Bootstraps 
