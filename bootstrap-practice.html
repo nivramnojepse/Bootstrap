@@ -10,12 +10,13 @@
         <title>ME Company</title>
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav class="autohide navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark" id="navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle" aria-controls="toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                 <img src="images/marvinlogo.jpg" alt="melogo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="fw-bold text-info">Marvin Espejon</span>
                 </a>
@@ -25,10 +26,10 @@
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacts">Contacts</a>
@@ -40,12 +41,14 @@
                     </form>
                 </div>
             </div>
-        </nav>   
-        
-        <main>
-            <div class="row bg-dark bg-gradient bg-opacity-50">
+        </nav>
+        <!-- Navigation bar End -->   
+        <!-- Main content --> 
+        <header>
+            <!-- Start Carousel // Home section --> 
+            <div class="row bg-dark bg-gradient" id="home">
                 <div class="col-1"></div>
-                <div id="captions" class="col-10 carousel slide" data-aos="zoom-out" data-aos-duration="1500">
+                <div id="captions" class="col-10 carousel slide carousel-fade shadow" data-aos="zoom-out" data-aos-duration="1500">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -55,35 +58,35 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/slide 1.jpg" class="d-block w-100" style="width:100%; height:750px !important;" alt="webdev">
+                            <img src="images/slide 1.jpg" class="d-block w-100" style="width:100%; height:760px !important;" alt="webdev">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 class="fw-bold">Web Development</h3>
                                 <p class="fst-italic">Crafting Digital Excellence: Tailored Web Development Solutions Unveiled for Satisfied Client Success</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/slide 2.jpg" class="d-block w-100" style="width:100%; height:750px !important;" alt="construction">
+                            <img src="images/slide 2.jpg" class="d-block w-100" style="width:100%; height:760px !important;" alt="construction">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 class="fw-bold text-dark">Construction</h3>
                                 <p class="fst-italic text-dark">Building Dreams into Reality: Custom Design and Construction Solutions for Discerning Clients</p>
                             </div>
                         </div> 
                         <div class="carousel-item">
-                        <img src="images/slide 3.jpg" class="d-block w-100" style="width:100%; height:750px !important;" alt="estimate">
+                        <img src="images/slide 3.jpg" class="d-block w-100" style="width:100%; height:760px !important;" alt="estimate">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 class="fw-bold text-dark">Estimation</h3>
                                 <p class="fst-italic text-dark">Precision in Progress: Delivering Accurate Construction Estimates for Client Projects</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                        <img src="images/slide 4.jpg" class="d-block w-100" style="width:100%; height:750px !important;" alt="videoedit">
+                        <img src="images/slide 4.jpg" class="d-block w-100" style="width:100%; height:760px !important;" alt="videoedit">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 class="fw-bold">Video Editing</h3>
                                 <p class="fst-italic">Transforming Vision into Reality: Expert Video Editing Services for Discerning Clients</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                        <img src="images/slide 5.jpg" class="d-block w-100" style="width:100%; height:750px  !important;" alt="photoedit">
+                        <img src="images/slide 5.jpg" class="d-block w-100" style="width:100%; height:760px  !important;" alt="photoedit">
                             <div class="carousel-caption d-none d-md-block">
                                 <h3 class="fw-bold">Photo Editing</h3>
                                 <p class="fst-italic">Refining Perspectives: Professional Photo Editing Tailored to Client Vision</p>
@@ -101,11 +104,65 @@
                 </div>
                 <div class="col-1"></div>
             </div>
+        </header>
+        <!-- End Carousel // Home section --> 
+        <main> 
+        <!-- Start Cards w/ header and footer and Forms // About section -->
+            <div class="row justify-content-evenly mt-2 border-dark shadow" id="about">
+                <div class="col-md-5 ml-5 mr-3 mt-3 mb-5 shadow border card">
+                    <div class="card-header">
+                      <h1>About</h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Overviews</h5>
+                        <p class="lh-lg card-text text-secondary font-monospace">
+                        Welcome to ME Company, where passion meets purpose. We are a dynamic and versatile team specializing in a wide array of services
+                        to cater to diverse client needs. From cutting-edge web development to meticulous construction building, innovative design and estimation,
+                        and expert video and photo editing, we pride ourselves on delivering excellence in every project we undertake.
+                        At ME Company, we believe in Integrity, Transparency, Innovation, Creativity and Continuous Improvement. We stand out from the crowd with our
+                        unwavering commitment to innovation, excellence, and client satisfaction. What sets us apart is our holistic approach to addressing diverse
+                        client needs across multiple domains.
+                        Customer satisfaction is at the heart of everything we do. We look forward to partnering with you!.
+                        Thank you for considering ME Company. Let's create something extraordinary together!
+                        </p> 
+                    </div>
+                </div>
+                <div class="col-md-5 ml-5 mr-3 mt-3 mb-5 shadow border card">
+                    <div class="card-header">
+                        <h1>Form</h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Get in touch</h5>
+                        <div class="mb-1">
+                            <label for="first" class="form-label">First Name:</label>
+                            <input type="text" class="form-control" id="first" placeholder="Juan">
+                        </div>
+                        <div class="mb-1">
+                            <label for="last" class="form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="last" placeholder="Dela Cruz">
+                        </div>
+                        <div class="mb-1">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="text" class="form-control" id="last" placeholder="JuanDelaCruz123@domain.com">
+                        </div>
+                        <div class="form-floating my-3">
+                            <textarea class="form-control mb-3" id="float" rows="3" placeholder=""></textarea>
+                            <label for="float">Let's talk about your Project:</label>
+                        </div>
+                        <button type="submit" class="btn btn-info fw-bold border-dark" type="submit">Submit</button>
+                    </div>
+                </div>  
+            </div>
+        <!-- End Cards w/ header and footer and Forms // About section -->
+        <!-- Start Cards w/ Pics, texts and links // Services section -->
+            <div class="row justify-content-evenly mt-2 border-dark shadow" id="services">
+                  
         </main>
-     
         
-
-
+        
+        <footer>
+        </footer>
+     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script> AOS.init(); </script>    
